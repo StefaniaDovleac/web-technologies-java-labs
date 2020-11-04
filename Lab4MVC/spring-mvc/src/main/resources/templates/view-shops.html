@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View shops</title>
+</head>
+<h1> View all shops</h1>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>CUI</td>
+
+    <tbody>
+    <tr th:if="${shopDTOList.empty}">
+        <td colspan="2">No shops available</td>
+    </tr>
+    <tr th:each="shopDTO : ${shopDTOList}">
+        <td><span th:text="${shopDTO.name}"> Name </span></td>
+        <td><span th:text="${shopDTO.CUI}"> CUI </span></td>
+        <!--        <td> <a th:href="@{/shops/{cui}(cui=${shopDto.shopCUI})}"><span th:text="${shopDto.shopCUI}"> CUI </span></a></td>-->
+    </tr>
+    </tbody>
+    </tr>
+    </thead>
+</table>
+
+</body>
+</html>

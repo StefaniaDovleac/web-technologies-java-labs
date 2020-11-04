@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16f4c794-4192-41a2-86bf-902e5c9d5522" name="Default Changelist" comment="my view-shops">
+      <change afterPath="$PROJECT_DIR$/.idea/Lab4MVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/SpringMvcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/domain/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/dto/ShopDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ShopMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/view-shops.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/java/com/unibuc/demo/SpringMvcApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jnHi4F4K5UCvkvhfxh7TPd4zrv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16f4c794-4192-41a2-86bf-902e5c9d5522" name="Default Changelist" comment="" />
+      <created>1604433059153</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604433059153</updated>
+      <workItem from="1604433060270" duration="1960000" />
+      <workItem from="1604486137141" duration="1349000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="my shop view" />
+    <MESSAGE value="my view-shops" />
+    <option name="LAST_COMMIT_MESSAGE" value="my view-shops" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1100" y="55" key="CommitChangelistDialog2" timestamp="1604487196346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1100" y="55" key="CommitChangelistDialog2/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604487196346" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604487171315">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604487171315" />
+  </component>
+</project>
