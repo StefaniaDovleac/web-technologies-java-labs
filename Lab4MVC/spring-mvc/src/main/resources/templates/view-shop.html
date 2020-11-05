@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Shop</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h2>View Shop</h2>
+<table>
+    <thead>
+    <tr>
+        <td>
+            Name
+        </td>
+        <td>
+            CUI
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <td th:text="${shopDTO.name}">
+        Name
+    </td>
+
+    <td th:text="${shopDTO.CUI}">
+
+    </td>
+    </tbody>
+</table>
+
+<h2>Products shop</h2>
+<table>
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Rating</td>
+    </tr>
+    <tbody>
+    <tr th:if="${shopDTO.productList.empty}"></tr>
+    <td colspan="2"> No products available</td>
+    <tr th:each="productDTO: ${shopDTO.productList}">
+        <td th:text="${productDTO.name}">Name</td>
+        <td th:text="${productDTO.price}">Price</td>
+        <td th:text="${productDTO.rating}">Rating</td>
+    </tr>
+
+    </tbody>
+    </thead>
+</table>
+</body>
+</html>

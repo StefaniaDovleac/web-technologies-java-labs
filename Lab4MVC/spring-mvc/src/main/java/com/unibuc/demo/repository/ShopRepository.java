@@ -64,6 +64,10 @@ public class ShopRepository {
         shopList.add(shop);
     }
 
+    public void createShop(Shop shop) {
+        this.shopList.add(shop);
+    }
+
     private void setUpContextForShopRepository() {
         createAndSave("Lidl", "RO123", retrieveProductsFromProductRepository(shopOneStartRange, shopOneEndRange));
         createAndSave("Kaufland", "RO456", retrieveProductsFromProductRepository(shopTwoStartRange, shopTwoEndRange));

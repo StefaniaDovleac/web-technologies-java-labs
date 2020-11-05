@@ -27,4 +27,12 @@ public class ShopService {
     public List<ShopDTO> getAllShop() {
         return shopRepository.getAll().stream().map(shopMapper::convertShopDTOFrom).collect(Collectors.toList());
     }
+
+    public ShopDTO getShopByCUI(String CUI) {
+        return shopMapper.convertShopDTOFrom(this.shopRepository.getByCUI(CUI).get());
+    }
+
+    public void createShop(ShopDTO shopDTO) {
+        this.shopRepository.createShop(this.shopMapper.convertShopFrom(shopDTO));
+    }
 }
