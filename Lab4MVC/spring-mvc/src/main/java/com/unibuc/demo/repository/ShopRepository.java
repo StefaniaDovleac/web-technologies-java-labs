@@ -40,6 +40,7 @@ public class ShopRepository {
     public List<Shop> getAll() {
         return shopList;
     }
+
     public Optional<Shop> getByCUI(String CUI) {
         return shopList.stream().filter(shop -> shop.getCUI().equals(CUI)).findFirst();
     }

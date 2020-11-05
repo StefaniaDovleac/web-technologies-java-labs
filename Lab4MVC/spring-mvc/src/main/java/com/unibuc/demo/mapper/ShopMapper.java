@@ -16,7 +16,7 @@ public class ShopMapper {
     private ProductMapper productMapper;
 
     public Shop convertShopFrom(ShopDTO shopDTO) {
-    List<Product> productListConverted = new ArrayList<>();
+        List<Product> productListConverted = new ArrayList<>();
         if (shopDTO.getProductList() != null) {
             shopDTO.getProductList().forEach(productDTO -> productListConverted.add(productMapper.convertProductFrom(productDTO)));
         }
@@ -29,7 +29,7 @@ public class ShopMapper {
 
     public ShopDTO convertShopDTOFrom(Shop shop) {
         List<ProductDTO> productListDTOConverted = new ArrayList<>();
-            shop.getProductList().forEach(product -> productListDTOConverted.add(productMapper.convertProductDTOFrom(product)));
+        shop.getProductList().forEach(product -> productListDTOConverted.add(productMapper.convertProductDTOFrom(product)));
 
         return ShopDTO.builder()
                 .CUI(shop.getCUI())

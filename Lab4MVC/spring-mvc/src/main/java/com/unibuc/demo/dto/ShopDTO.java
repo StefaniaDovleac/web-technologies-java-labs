@@ -4,6 +4,7 @@ import com.unibuc.demo.domain.Product;
 import lombok.*;
 
 import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor

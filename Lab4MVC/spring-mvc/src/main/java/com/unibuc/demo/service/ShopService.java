@@ -15,16 +15,16 @@ public class ShopService {
 
     private final ProductMapper productMapper;
     private final ShopMapper shopMapper;
-    private  final ShopRepository shopRepository;
+    private final ShopRepository shopRepository;
 
-@Autowired
+    @Autowired
     public ShopService(ProductMapper productMapper, ShopMapper shopMapper, ShopRepository shopRepository) {
         this.productMapper = productMapper;
         this.shopMapper = shopMapper;
         this.shopRepository = shopRepository;
     }
 
-    public List<ShopDTO> getAllShop(){
+    public List<ShopDTO> getAllShop() {
         return shopRepository.getAll().stream().map(shopMapper::convertShopDTOFrom).collect(Collectors.toList());
     }
 }

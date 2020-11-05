@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f4c794-4192-41a2-86bf-902e5c9d5522" name="Default Changelist" comment="my view-shops">
-      <change afterPath="$PROJECT_DIR$/.idea/Lab4MVC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/SpringMvcApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/domain/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/dto/ShopDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ShopMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/view-shops.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/java/com/unibuc/demo/SpringMvcApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +32,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Lab4MVC" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,8 +61,17 @@
       <option name="presentableId" value="Default" />
       <updated>1604433059153</updated>
       <workItem from="1604433060270" duration="1960000" />
-      <workItem from="1604486137141" duration="1349000" />
+      <workItem from="1604486137141" duration="6626000" />
+      <workItem from="1604594317012" duration="572000" />
     </task>
+    <task id="LOCAL-00001" summary="my view-shops">
+      <created>1604504893606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604504893718</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,13 +83,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="my view-shops" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1100" y="55" key="CommitChangelistDialog2" timestamp="1604487196346">
+    <state x="1067" y="145" key="#Deployment" timestamp="1604506321395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1100" y="55" key="CommitChangelistDialog2/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604487196346" />
+    <state x="1067" y="145" key="#Deployment/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506321395" />
+    <state x="2054" y="98" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604594901067">
+      <screen x="1920" y="98" width="1360" height="728" />
+    </state>
+    <state x="2054" y="98" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604594901067" />
+    <state x="2329" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604594546597">
+      <screen x="1920" y="98" width="1360" height="728" />
+    </state>
+    <state x="2329" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604594546597" />
+    <state x="1100" y="55" key="CommitChangelistDialog2" timestamp="1604506442689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1100" y="55" key="CommitChangelistDialog2/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506442689" />
+    <state x="368" y="53" key="DiffContextDialog" timestamp="1604506266341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="368" y="53" key="DiffContextDialog/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506266341" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604509046920">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604509046920" />
+    <state x="787" y="222" key="RollbackChangesDialog" timestamp="1604508739876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="787" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604508739876" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1604487171315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604487171315" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604506453863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506453863" />
   </component>
 </project>

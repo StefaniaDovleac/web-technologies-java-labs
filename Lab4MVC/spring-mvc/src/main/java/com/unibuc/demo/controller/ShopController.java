@@ -21,7 +21,7 @@ public class ShopController {
     }
 
     @GetMapping()
-    public String getAll(Model model){
+    public String getAll(Model model) {
         List<ShopDTO> shopDTOList = shopService.getAllShop();
         model.addAttribute("shopDTOList", shopDTOList);
         return "view-shops";
