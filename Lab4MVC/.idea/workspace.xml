@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="16f4c794-4192-41a2-86bf-902e5c9d5522" name="Default Changelist" comment="my view-shops">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/dto/ShopDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ShopMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/mapper/ShopMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +70,7 @@
       <updated>1604433059153</updated>
       <workItem from="1604433060270" duration="1960000" />
       <workItem from="1604486137141" duration="6626000" />
-      <workItem from="1604594317012" duration="572000" />
+      <workItem from="1604594317012" duration="902000" />
     </task>
     <task id="LOCAL-00001" summary="my view-shops">
       <created>1604504893606</created>
@@ -91,10 +99,10 @@
       <screen x="1920" y="98" width="1360" height="728" />
     </state>
     <state x="2054" y="98" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604594901067" />
-    <state x="2329" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604594546597">
+    <state x="2329" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604594923606">
       <screen x="1920" y="98" width="1360" height="728" />
     </state>
-    <state x="2329" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604594546597" />
+    <state x="2329" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604594923606" />
     <state x="1100" y="55" key="CommitChangelistDialog2" timestamp="1604506442689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -103,10 +111,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="53" key="DiffContextDialog/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506266341" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604509046920">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2444" y="290" key="FileChooserDialogImpl" timestamp="1604595098515">
+      <screen x="1920" y="98" width="1360" height="728" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604509046920" />
+    <state x="2444" y="290" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595098515" />
     <state x="787" y="222" key="RollbackChangesDialog" timestamp="1604508739876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,5 +128,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506453863" />
+    <state x="1982" y="122" key="new project wizard" timestamp="1604595100283">
+      <screen x="1920" y="98" width="1360" height="728" />
+    </state>
+    <state x="1982" y="122" key="new project wizard/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595100283" />
   </component>
 </project>
