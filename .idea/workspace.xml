@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05d843a0-605c-4cbd-ab67-1d3ce95e4a87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/add-shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/edit-shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4MVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shops.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shops.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +40,6 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="JavaLabs" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -70,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604595108421</updated>
       <workItem from="1604595110133" duration="871000" />
+      <workItem from="1604655686193" duration="550000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1604595224741</created>

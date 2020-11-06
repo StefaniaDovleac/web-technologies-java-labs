@@ -3,6 +3,7 @@ package com.unibuc.demo.repository;
 
 import com.unibuc.demo.domain.Product;
 import com.unibuc.demo.domain.Shop;
+import com.unibuc.demo.dto.ShopDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
@@ -68,6 +69,11 @@ public class ShopRepository {
         this.shopList.add(shop);
     }
 
+    public void updateShop(String CUI, Shop shop) {
+        int index = this.shopList.indexOf(this.getByCUI(CUI));
+        this.shopList.set(index, shop);//update in lista
+    }
+
     private void setUpContextForShopRepository() {
         createAndSave("Lidl", "RO123", retrieveProductsFromProductRepository(shopOneStartRange, shopOneEndRange));
         createAndSave("Kaufland", "RO456", retrieveProductsFromProductRepository(shopTwoStartRange, shopTwoEndRange));
@@ -76,6 +82,10 @@ public class ShopRepository {
     @PostConstruct
     public void afterPropertiesSettings() {
         setUpContextForShopRepository();
+    }
+
+    public void addNewProduct(String CUI) {
+
     }
 
 

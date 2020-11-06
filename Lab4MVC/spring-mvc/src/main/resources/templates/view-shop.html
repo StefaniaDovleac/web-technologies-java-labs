@@ -11,6 +11,7 @@
 </head>
 <body>
 <h2>View Shop</h2>
+<a th:href="@{/shops/update/{CUI} (CUI=${shopDTO.CUI})}">Edit shop</a>
 <table>
     <thead>
     <tr>
@@ -43,7 +44,7 @@
     </tr>
     <tbody>
     <tr th:if="${shopDTO.productList.empty}"></tr>
-    <td colspan="2"> No products available</td>
+    <td colspan="3"> No products available</td>
     <tr th:each="productDTO: ${shopDTO.productList}">
         <td th:text="${productDTO.name}">Name</td>
         <td th:text="${productDTO.price}">Price</td>
@@ -53,5 +54,6 @@
     </tbody>
     </thead>
 </table>
+
 </body>
 </html>

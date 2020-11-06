@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit shop</title>
+</head>
+<body>
+<h2>Edit shop</h2>
+<form action="#" th:object="${shopDTO}" method="post">
+    <label for="name"> CUI </label>
+    <input type="text" th:field="*{CUI}" id="CUI" disabled>
+    <br>
+
+    <label for="name"> Name </label>
+    <input type="text" th:field="*{name}" id="name">
+    <br>
+
+    <a th:href="@{/shops/add-product/{CUI} (CUI=${shopDTO.CUI})}">Add product</a>
+    <h2>Products </h2>
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Rating</td>
+        </tr>
+        <tbody>
+        <tr th:if="${shopDTO.productList.empty}"></tr>
+        <td colspan="3"> No products available</td>
+        <tr th:each="productDTO: ${shopDTO.productList}">
+            <td><input type="text" th:value="${productDTO.name}"></td>
+            <td><input type="text" th:value="${productDTO.price}"></td>
+            <td><input type="text" th:value="${productDTO.rating}"></td>
+
+        </tr>
+
+        </tbody>
+        </thead>
+    </table>
+
+
+    <br>
+    <input style="background-color: greenyellow" type="submit" value="Edit">
+</form>
+</body>
+</html>

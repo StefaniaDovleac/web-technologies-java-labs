@@ -41,13 +41,38 @@ public class ShopController {
     @PostMapping("/create")
     public String createShop(ShopDTO shopDTO, Model model) {
         this.shopService.createShop(shopDTO);
-        model.addAttribute("shopDTOList", shopService.getAllShop());
-        return "view-shops";
+        ShopDTO savedShopDTO = this.shopService.getShopByCUI(shopDTO.getCUI());
+        model.addAttribute("shopDTO", savedShopDTO);
+        return "view-shop";
     }
 
-//    @PutMapping("/update")
-//    public String updateShop (ShopDto shopDto, Model model){
-//
-//    }
+    @GetMapping("/update/{CUI}")
+    public String updateShop(@PathVariable("CUI") String CUI, ShopDTO shopDTOEdited, Model model) {
+//        this.shopService.updateShop(CUI, shopDTO);
+        ShopDTO shopDTO = this.shopService.getShopByCUI(CUI);
+        model.addAttribute("shopDTO", shopDTO);
+        System.out.println(CUI);
+        return "edit-shop";
+    }
+
+    @GetMapping("/update")
+    public String update(ShopDTO shopDTOEdited, Model model) {
+//        this.shopService.updateShop(CUI, shopDTO);
+//        ShopDTO shopDTO = this.shopService.getShopByCUI(CUI);
+//        model.addAttribute("shopDTO", shopDTO);
+//        System.out.println(CUI);
+        return "";
+    }
+
+    @RequestMapping(value = "add-product/{CUI}")
+    public void addProduct(@PathVariable("CUI") String CUI) {
+        System.out.println("add");
+        this.shopService.addNewProduct(CUI);
+    }
+
+
+    //Tema:
+    //1.Implement the createShop method and the add-shop view.
+    //2.Create an end-point to update(put) the shop (including adding new products) .
 
 }

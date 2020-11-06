@@ -35,4 +35,12 @@ public class ShopService {
     public void createShop(ShopDTO shopDTO) {
         this.shopRepository.createShop(this.shopMapper.convertShopFrom(shopDTO));
     }
+
+    public void updateShop(String CUI, ShopDTO shopDTO) {
+        this.shopRepository.updateShop(CUI, this.shopMapper.convertShopFrom(shopDTO));
+    }
+
+    public void addNewProduct(String CUI) {
+        this.shopRepository.addNewProduct(CUI);
+    }
 }
