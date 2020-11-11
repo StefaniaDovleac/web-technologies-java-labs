@@ -49,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TemaLab5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
@@ -84,7 +84,7 @@
       <workItem from="1604433060270" duration="1960000" />
       <workItem from="1604486137141" duration="6626000" />
       <workItem from="1604594317012" duration="9875000" />
-      <workItem from="1604655691949" duration="12404000" />
+      <workItem from="1604655691949" duration="12714000" />
     </task>
     <task id="LOCAL-00001" summary="my view-shops">
       <created>1604504893606</created>
@@ -150,10 +150,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="53" key="DiffContextDialog/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604506266341" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605100303047">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605110365111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1604509046920" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1605110365111" />
     <state x="2444" y="290" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595098515" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605100303047" />
     <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1604672599510">
