@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05d843a0-605c-4cbd-ab67-1d3ce95e4a87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/edit-shop.html" afterDir="false" />
+    <list default="true" id="15bedef9-24d3-4ff1-adbe-12ed9f119986" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4MVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/controller/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/repository/ShopRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/java/com/unibuc/demo/service/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4MVC/spring-mvc/src/main/resources/templates/view-shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +24,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1jsaABRJVgdzMPrya2rBjrYULsT" />
+  <component name="ProjectId" id="1k96FQPYQvCnxFha6nxhepHrs4Y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,8 +36,8 @@
   </component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="JavaLabs" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <module name="TemaLab5" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unibuc.demo.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -51,79 +46,26 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="05d843a0-605c-4cbd-ab67-1d3ce95e4a87" name="Default Changelist" comment="" />
-      <created>1604595108421</created>
+      <changelist id="15bedef9-24d3-4ff1-adbe-12ed9f119986" name="Default Changelist" comment="" />
+      <created>1605100371501</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604595108421</updated>
-      <workItem from="1604595110133" duration="871000" />
-      <workItem from="1604655686193" duration="550000" />
+      <updated>1605100371501</updated>
+      <workItem from="1605100374707" duration="707000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1604595224741</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1604595224741</updated>
-    </task>
-    <task id="LOCAL-00002" summary="structura">
-      <created>1604595349321</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604595349321</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="structura" />
-    <option name="LAST_COMMIT_MESSAGE" value="structura" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="2225" y="98" key="CommitChangelistDialog2" timestamp="1604595348294">
-      <screen x="1920" y="98" width="1360" height="728" />
+    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1605100469908">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2225" y="98" key="CommitChangelistDialog2/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595348294" />
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom" timestamp="1604595329897">
-      <screen x="1920" y="98" width="1360" height="728" />
+    <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605100469908" />
+    <state x="342" y="180" key="new project wizard" timestamp="1605100471324">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329897" />
-    <state width="1317" height="179" key="GridCell.Tab.0.center" timestamp="1604595329897">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.center/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329897" />
-    <state width="1317" height="179" key="GridCell.Tab.0.left" timestamp="1604595329897">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.left/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329897" />
-    <state width="1317" height="179" key="GridCell.Tab.0.right" timestamp="1604595329897">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.right/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329897" />
-    <state width="1317" height="179" key="GridCell.Tab.1.bottom" timestamp="1604595329898">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329898" />
-    <state width="1317" height="179" key="GridCell.Tab.1.center" timestamp="1604595329897">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.1.center/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329897" />
-    <state width="1317" height="179" key="GridCell.Tab.1.left" timestamp="1604595329897">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.1.left/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329897" />
-    <state width="1317" height="179" key="GridCell.Tab.1.right" timestamp="1604595329898">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state width="1317" height="179" key="GridCell.Tab.1.right/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595329898" />
-    <state x="2192" y="194" key="Vcs.Push.Dialog.v2" timestamp="1604595354736">
-      <screen x="1920" y="98" width="1360" height="728" />
-    </state>
-    <state x="2192" y="194" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.98.1360.728@1920.98.1360.728" timestamp="1604595354736" />
+    <state x="342" y="180" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605100471324" />
   </component>
 </project>
