@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16f4c794-4192-41a2-86bf-902e5c9d5522" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/java/com/unibuc/demo/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/java/com/unibuc/demo/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/java/com/unibuc/demo/dto/StudentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/java/com/unibuc/demo/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/java/com/unibuc/demo/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/java/com/unibuc/demo/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/resources/templates/add-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/resources/templates/update-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/resources/templates/view-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemaLab5/src/main/resources/templates/view-students.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemaLab5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TemaLab5/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +93,7 @@
       <workItem from="1604433060270" duration="1960000" />
       <workItem from="1604486137141" duration="6626000" />
       <workItem from="1604594317012" duration="9875000" />
-      <workItem from="1604655691949" duration="12714000" />
+      <workItem from="1604655691949" duration="20517000" />
     </task>
     <task id="LOCAL-00001" summary="my view-shops">
       <created>1604504893606</created>
