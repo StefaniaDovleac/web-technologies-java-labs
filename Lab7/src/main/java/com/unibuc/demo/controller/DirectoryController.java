@@ -10,6 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -37,7 +38,7 @@ public class DirectoryController {
     }
 
     @PostMapping(path = "/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<DirectoryDTO> create(@RequestBody DirectoryDTO directoryDTO) {
+    public ResponseEntity<DirectoryDTO> create(@RequestBody @Valid DirectoryDTO directoryDTO) {
         Directory directoryToSave = directoryMapper.mapFromDTO(directoryDTO);
         DirectoryDTO savedDirectory = directoryMapper.mapToDTO(directoryService.save(directoryToSave));
         return new ResponseEntity<>(savedDirectory, HttpStatus.CREATED);

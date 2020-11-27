@@ -14,12 +14,9 @@ public class DirectoryService {
 
     private final DirectoryRepository directoryRepository;
 
-    public DirectoryService(DirectoryRepository directoryRepository, DirectoryMapper directoryMapper) {
+    public DirectoryService(DirectoryRepository directoryRepository) {
         this.directoryRepository = directoryRepository;
-        this.directoryMapper = directoryMapper;
     }
-
-    private final DirectoryMapper directoryMapper;
 
     public Directory getById(Long id){
         return directoryRepository.getById(id).get();
