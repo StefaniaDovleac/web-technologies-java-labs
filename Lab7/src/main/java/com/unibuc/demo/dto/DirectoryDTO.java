@@ -13,7 +13,7 @@ import java.util.List;
 public class DirectoryDTO {
     @NotNull
     private Long id;
-    @Size(min=1)
+    @Size(min=1, max=20)
     private String title;
     private Long parentId;
     private List<FileDTO> files;

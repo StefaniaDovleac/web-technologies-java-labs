@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/directory")
+@RequestMapping("/directories")
 public class DirectoryController {
     private final DirectoryService directoryService;
     private final DirectoryMapper directoryMapper;
@@ -39,20 +39,20 @@ public class DirectoryController {
 
     @PostMapping(path = "/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<DirectoryDTO> create(@RequestBody @Valid DirectoryDTO directoryDTO) {
-        Directory directoryToSave = directoryMapper.mapFromDTO(directoryDTO);
+        Directory directoryToSave = directoryMapper.mapToEntity(directoryDTO);
         DirectoryDTO savedDirectory = directoryMapper.mapToDTO(directoryService.save(directoryToSave));
         return new ResponseEntity<>(savedDirectory, HttpStatus.CREATED);
     }
 
-    @PutMapping(path = "/update", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<DirectoryDTO> update(@RequestBody DirectoryDTO directoryDTO) {
-        Directory directoryToUpdate = directoryMapper.mapFromDTO(directoryDTO);
-        DirectoryDTO updatedDirectory = directoryMapper.mapToDTO(directoryService.update(directoryToUpdate));
-        return new ResponseEntity<>(updatedDirectory, updatedDirectory != null ? HttpStatus.OK : HttpStatus.NO_CONTENT);
-    }
-
-    @DeleteMapping(path = "/delete/{id}")
-    public String delete(@PathVariable Long id) {
-        return directoryService.delete(id);
-    }
+//    @PutMapping(path = "/update", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+//    public ResponseEntity<DirectoryDTO> update(@RequestBody DirectoryDTO directoryDTO) {
+//        Directory directoryToUpdate = directoryMapper.mapToEntity(directoryDTO);
+//        DirectoryDTO updatedDirectory = directoryMapper.mapToDTO(directoryService.update(directoryToUpdate));
+//        return new ResponseEntity<>(updatedDirectory, updatedDirectory != null ? HttpStatus.OK : HttpStatus.NO_CONTENT);
+//    }
+//
+//    @DeleteMapping(path = "/delete/{id}")
+//    public String delete(@PathVariable Long id) {
+//        return directoryService.delete(id);
+//    }
 }

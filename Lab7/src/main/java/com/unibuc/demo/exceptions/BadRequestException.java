@@ -1,7 +1,7 @@
 package com.unibuc.demo.exceptions;
 
-public class EntityNotFoundException extends RuntimeException{
-    public EntityNotFoundException(String message) {
+public class BadRequestException extends RuntimeException{
+    public BadRequestException(String message) {
         super(message);
     }
 }

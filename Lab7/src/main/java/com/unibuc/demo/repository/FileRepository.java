@@ -1,9 +1,10 @@
 package com.unibuc.demo.repository;
 
 import com.unibuc.demo.domain.File;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.unibuc.demo.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,12 +12,29 @@ import java.util.List;
 public class FileRepository {
     private List<File> files = new ArrayList<>();
 
-
-
     public List<File> getAll() {
         return files;
     }
 
+    public File getById(long id) {
+        return files.stream()
+                .filter(file -> file.getId().equals(id))
+                .findFirst()
+                .orElseThrow(() ->new EntityNotFoundException(String.format("File with id could not be found", id)));
+    }
+
+    public File save(File file){
+        files.add(file);
+        return file;
+    }
+
+//    public String delete(long id){
+//        File fileToDelete = getById(id);
+//        if(fileToDelete)
+//        files.remove(fileToDelete);
+//    }
+
+    @PostConstruct
     private void initList() {
         files.add(File.builder()
                 .id(1L)
@@ -29,6 +47,5 @@ public class FileRepository {
                 .title("File2")
                 .size(320)
                 .build());
-
     }
 }

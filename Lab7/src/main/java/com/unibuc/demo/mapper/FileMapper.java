@@ -4,10 +4,10 @@ import com.unibuc.demo.domain.File;
 import com.unibuc.demo.dto.FileDTO;
 import org.mapstruct.Mapper;
 
-@Mapper
-public interface FileMapper {
+@Mapper (componentModel = "spring")
+public interface FileMapper extends EntityMapper<FileDTO, File> {
 
-    File mapFromDTO(FileDTO fileDTO);
+    File mapToEntity(FileDTO fileDTO);
 
     FileDTO mapToDTO(File file);
 }

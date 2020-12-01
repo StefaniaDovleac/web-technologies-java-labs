@@ -1,7 +1,7 @@
 package com.unibuc.demo.exceptions;
 
-public class EntityNotFound extends RuntimeException{
-    public EntityNotFound(String message) {
+public class EntityNotFoundException extends RuntimeException{
+    public EntityNotFoundException(String message) {
         super(message);
     }
 }

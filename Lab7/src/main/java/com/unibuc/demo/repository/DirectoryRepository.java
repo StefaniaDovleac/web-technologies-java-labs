@@ -2,13 +2,14 @@ package com.unibuc.demo.repository;
 
 import com.unibuc.demo.domain.Directory;
 import com.unibuc.demo.domain.File;
+import com.unibuc.demo.exceptions.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class DirectoryRepository {
@@ -28,8 +29,12 @@ public class DirectoryRepository {
         return directories;
     }
 
-    public Optional<Directory> getById(Long id){
-        return directories.stream().filter(directory -> directory.getId().equals(id)).findFirst();
+    public Directory getById(Long id){
+        return directories.stream()
+                .filter(directory -> directory.getId().equals(id))
+                .findAny()
+                .orElseThrow(() ->new EntityNotFoundException(String.format("Directory with id %l could not be found", id)));
+
     }
 
     public Directory save( Directory directory){
@@ -37,40 +42,44 @@ public class DirectoryRepository {
         return directory;
     }
 
-    public String delete(Long id){
-        Optional<Directory> directoryToDelete = getById(id);
-        if(directoryToDelete.isPresent()){
-            directories.remove(directoryToDelete);
-            return "Removed";
-        }
-        return "Directory with id " + id + " not found";
-    }
+//    public String delete(Long id){
+//        Directory directoryToDelete = getById(id);
+//        if(directoryToDelete){
+//            directories.remove(directoryToDelete);
+//            return "Removed";
+//        }
+//        return "Directory with id " + id + " not found";
+//    }
+//
+//    public Directory update(Directory directory){
+//         Optional<Directory> directoryToUpdate = getById(directory.getId());
+//         if(directoryToUpdate.isPresent()){
+//             directories.remove(directoryToUpdate);
+//             directories.add(directory);
+//             return getById(directory.getId()).get();
+//         }
+//         return null;
+//    }
 
-    public Directory update(Directory directory){
-         Optional<Directory> directoryToUpdate = getById(directory.getId());
-         if(directoryToUpdate.isPresent()){
-             directories.remove(directoryToUpdate);
-             directories.add(directory);
-             return getById(directory.getId()).get();
-         }
-         return null;
-    }
-
+    @PostConstruct
     private void initList(){
-        List<File> filesDirectory1 = fileRepository.getAll();
 
         directories.add(Directory.builder()
                 .id(1L)
                 .title("Directory1")
                 .parentId(0L)
-//                .files(filesDirectory1)
+                .files(Collections.singletonList(File.builder()
+                        .id(2L)
+                        .title("File2")
+                        .size(320)
+                        .build()))
                 .build());
 
         directories.add(Directory.builder()
                 .id(2L)
                 .title("Directory2")
                 .parentId(1L)
-//                .files(filesDirectory1)
+                .files(null)
                 .build());
     }
 }
