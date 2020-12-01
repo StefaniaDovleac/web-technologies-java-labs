@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DirectoryDTO {
-    @NotNull
+//    @NotNull
     private Long id;
     @Size(min=1, max=20)
     private String title;

@@ -44,15 +44,15 @@ public class DirectoryController {
         return new ResponseEntity<>(savedDirectory, HttpStatus.CREATED);
     }
 
-//    @PutMapping(path = "/update", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-//    public ResponseEntity<DirectoryDTO> update(@RequestBody DirectoryDTO directoryDTO) {
-//        Directory directoryToUpdate = directoryMapper.mapToEntity(directoryDTO);
-//        DirectoryDTO updatedDirectory = directoryMapper.mapToDTO(directoryService.update(directoryToUpdate));
-//        return new ResponseEntity<>(updatedDirectory, updatedDirectory != null ? HttpStatus.OK : HttpStatus.NO_CONTENT);
-//    }
-//
-//    @DeleteMapping(path = "/delete/{id}")
-//    public String delete(@PathVariable Long id) {
-//        return directoryService.delete(id);
-//    }
+    @PutMapping(path = "/update", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<DirectoryDTO> update(@RequestBody DirectoryDTO directoryDTO) {
+        Directory directoryToUpdate = directoryMapper.mapToEntity(directoryDTO);
+        DirectoryDTO updatedDirectory = directoryMapper.mapToDTO(directoryService.update(directoryToUpdate));
+        return new ResponseEntity<>(updatedDirectory,  HttpStatus.OK);
+    }
+
+    @DeleteMapping(path = "/delete/{id}")
+    public String delete(@PathVariable Long id) {
+        return directoryService.delete(id);
+    }
 }

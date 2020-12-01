@@ -43,4 +43,9 @@ public class FileController {
         FileDTO fileDTOInserted = fileMapper.mapToDTO(this.fileService.save(fileToInsert));
         return new ResponseEntity<>(fileDTOInserted, HttpStatus.CREATED);
     }
+
+    @DeleteMapping(path = "/delete/{id}")
+    public String delete(@PathVariable Long id){
+        return this.fileService.delete(id);
+    }
 }

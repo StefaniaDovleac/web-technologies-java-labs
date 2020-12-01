@@ -31,7 +31,7 @@ public class FileService {
         return this.fileRepository.save(file);
     }
 
-//    public String delete(long id){
-//        return
-//    }
+    public String delete(long id){
+        return fileRepository.delete(id);
+    }
 }

@@ -40,11 +40,11 @@ public class DirectoryService {
         }
     }
 
-//    public Directory update(Directory directory){
-//        return directoryRepository.update(directory);
-//    }
-//
-//    public String delete (Long id){
-//        return directoryRepository.delete(id);
-//    }
+    public Directory update(Directory directory){
+        return directoryRepository.update(directory);
+    }
+
+    public String delete (Long id){
+        return directoryRepository.delete(id);
+    }
 }
