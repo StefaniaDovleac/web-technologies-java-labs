@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Student</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h2>Student info</h2>
+<table>
+    <thead>
+    <tr>
+        <td>CNP</td>
+        <td>Name</td>
+        <td>BirthDate</td>
+        <td>Email</td>
+    <tbody>
+
+    <tr>
+        <td><span th:text="${studentDTO.CNP}"> CNP </span></td>
+        <td><span th:text="${studentDTO.name}"> Name </span></td>
+        <td><span th:text="${studentDTO.birthDate}"> BirthDate </span></td>
+        <td><span th:text="${studentDTO.email}"> Email </span></td>
+
+    </tr>
+    </tbody>
+    </tr>
+    </thead>
+    <br>
+</table>
+</body>
+</html>

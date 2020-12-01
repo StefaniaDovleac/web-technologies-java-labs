@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Students</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    View Students
+
+</h2>
+<table>
+    <thead>
+    <tr>
+        <td>CNP</td>
+        <td>Name</td>
+        <td>BirthDate</td>
+        <td>Email</td>
+        <td>Update</td>
+        <td>Delete</td>
+
+    <tbody>
+    <tr th:if="${studentDTOList.empty}">
+        <td colspan="4">No students available</td>
+    </tr>
+    <tr th:each="studentDTO : ${studentDTOList}">
+        <td>
+            <a th:href="@{/students/{CNP} (CNP=${studentDTO.CNP})}">
+                <span th:text="${studentDTO.CNP}"> CNP </span>
+            </a>
+        </td>
+        <td><span th:text="${studentDTO.name}"> Name </span></td>
+        <td><span th:text="${studentDTO.birthDate}"> BirthDate </span></td>
+        <td><span th:text="${studentDTO.email}"> Email </span></td>
+        <td> <a th:href="@{/students/view-update/{CNP}(CNP=${studentDTO.CNP})}">Edit</a></td>
+        <td> <a th:href="@{/students/delete/{CNP}(CNP=${studentDTO.CNP})}">Delete</a></td>
+    </tr>
+    </tbody>
+    </tr>
+    </thead>
+    <br>
+</table>
+
+<a th:href="@{/students/view-create}"> <h3>Add new student </h3></a>
+</body>
+</html>
