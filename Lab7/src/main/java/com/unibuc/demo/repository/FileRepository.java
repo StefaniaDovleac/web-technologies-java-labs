@@ -20,7 +20,7 @@ public class FileRepository {
         return files.stream()
                 .filter(file -> file.getId().equals(id))
                 .findFirst()
-                .orElseThrow(() ->new EntityNotFoundException(String.format("File with id could not be found", id)));
+                .orElseThrow(() ->new EntityNotFoundException(String.format("File with id %d could not be found", id)));
     }
 
     public File save(File file){
@@ -28,11 +28,11 @@ public class FileRepository {
         return file;
     }
 
-//    public String delete(long id){
-//        File fileToDelete = getById(id);
-//        if(fileToDelete)
-//        files.remove(fileToDelete);
-//    }
+    public String delete(long id){
+        File fileToDelete = getById(id);
+        files.remove(fileToDelete);
+        return "Removed";
+    }
 
     @PostConstruct
     private void initList() {

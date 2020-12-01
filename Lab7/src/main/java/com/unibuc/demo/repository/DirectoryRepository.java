@@ -14,7 +14,7 @@ import java.util.List;
 @Repository
 public class DirectoryRepository {
     private final List<Directory> directories = new ArrayList<>();
-    private  FileRepository fileRepository;
+    private FileRepository fileRepository;
 
     @Autowired
     public DirectoryRepository(FileRepository fileRepository) {
@@ -25,44 +25,38 @@ public class DirectoryRepository {
         initList();
     }
 
-    public List<Directory> getAll(){
+    public List<Directory> getAll() {
         return directories;
     }
 
-    public Directory getById(Long id){
+    public Directory getById(Long id) {
         return directories.stream()
                 .filter(directory -> directory.getId().equals(id))
                 .findAny()
-                .orElseThrow(() ->new EntityNotFoundException(String.format("Directory with id %l could not be found", id)));
+                .orElseThrow(() -> new EntityNotFoundException(String.format("Directory with id %d could not be found", id)));
 
     }
 
-    public Directory save( Directory directory){
+    public Directory save(Directory directory) {
         directories.add(directory);
         return directory;
     }
 
-//    public String delete(Long id){
-//        Directory directoryToDelete = getById(id);
-//        if(directoryToDelete){
-//            directories.remove(directoryToDelete);
-//            return "Removed";
-//        }
-//        return "Directory with id " + id + " not found";
-//    }
-//
-//    public Directory update(Directory directory){
-//         Optional<Directory> directoryToUpdate = getById(directory.getId());
-//         if(directoryToUpdate.isPresent()){
-//             directories.remove(directoryToUpdate);
-//             directories.add(directory);
-//             return getById(directory.getId()).get();
-//         }
-//         return null;
-//    }
+    public String delete(Long id) {
+        Directory directoryToDelete = getById(id);
+        directories.remove(directoryToDelete);
+        return "Removed";
+    }
+
+    public Directory update(Directory directory) {
+        Directory directoryToUpdate = getById(directory.getId());
+        directories.remove(directoryToUpdate);
+        directories.add(directory);
+        return getById(directory.getId());
+    }
 
     @PostConstruct
-    private void initList(){
+    private void initList() {
 
         directories.add(Directory.builder()
                 .id(1L)

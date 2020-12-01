@@ -11,7 +11,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @Builder
 public class FileDTO {
-    @NotNull
+//    @NotNull
     private Long id;
     @Size(min=1, max=20)
     private String title;
