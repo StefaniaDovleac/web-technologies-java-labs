@@ -16,5 +16,6 @@ public class Directory {
     @Size(min=1)
     private String title;
     private Long parentId;
+    private Integer maxNumberOfFiles;
     private List<File> files;
 }
