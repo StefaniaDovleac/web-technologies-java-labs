@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center ">
+    <h2 class="text-center">Category</h2>
+    <div class=" content-block ml-a">
+        <dx-button class="ml-2" text="Sterge" type="default" (click)="onDelete()"></dx-button>
+    </div>
+    <div class="dx-card wide-card">
+        <form class="p-4" [formGroup]="form" (submit)="onSave()">
+            <div class="form-row align-items-end row">
+                <div class="col-12">
+                    <label for="inputName" class="dx-field-label mb-0 pb-0 text-left">Name</label>
+                    <dx-text-box #inputName formControlName="name" valueChangeEvent="input">
+                        <dx-validator validationGroup="categoryComponentValidationGroup">
+                            <dxi-validation-rule type="required" message=" "></dxi-validation-rule>
+                        </dx-validator>
+                    </dx-text-box>
+                </div>
+                <div class="col-12">
+                    <label for="inputDescription" class="dx-field-label mb-0 pb-0 text-left">Description</label>
+                    <dx-text-box #inputDescription formControlName="description" valueChangeEvent="input">
+
+                    </dx-text-box>
+                </div>
+                <div class="col-12 pt-2">
+                    <dx-button [useSubmitBehavior]="true" class=" d-block dx-button-default" text="Save"
+                        validationGroup="categoryComponentValidationGroup">
+                    </dx-button>
+                    <!-- <dx-button class=" d-block dx-button-primary mt-2" text="Login with facebook"
+                            (click)="onFacebookLogin()">
+                        </dx-button> -->
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

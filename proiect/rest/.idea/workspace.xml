@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc35e8cf-adf0-4762-a97d-e471a01d3898" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../SeniorDriveClient/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../SeniorDriveClient/src/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/domain/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/domain/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/dto/FileDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/dto/FileDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/DirectoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/DirectoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\Stefania Dovleac\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lgf791ZR3lmHHUFjjT1kELStkW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc35e8cf-adf0-4762-a97d-e471a01d3898" name="Default Changelist" comment="" />
+      <created>1608023487417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608023487417</updated>
+      <workItem from="1608023489144" duration="737000" />
+      <workItem from="1609155663555" duration="1175000" />
+      <workItem from="1609176304409" duration="52000" />
+      <workItem from="1609869859097" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1608023636757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1608023636757" />
+    <state x="342" y="180" key="new project wizard" timestamp="1608023638393">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="180" key="new project wizard/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1608023638393" />
+  </component>
+</project>

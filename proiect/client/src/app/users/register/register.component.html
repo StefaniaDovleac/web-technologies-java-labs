@@ -1,0 +1,64 @@
+<dx-load-panel [visible]="loading$ | async" [showIndicator]="true" [showPane]="true" [shading]="true"
+    [closeOnOutsideClick]="false"></dx-load-panel>
+
+<div class="d-flex justify-content-center ">
+    <div style="width: 300px;">
+        <h2 class="text-center">Register</h2>
+        <div class="dx-card wide-card">
+            <form class="p-4" [formGroup]="form" (submit)="onRegister()">
+                <div class="form-row align-items-end row">
+                    <div class="col-12">
+                        <label for="inputUser" class="dx-field-label mb-0 pb-0 text-left">Email</label>
+                        <dx-text-box #inputUser type="text" id="inputEmail" name="email" formControlName="email"
+                            valueChangeEvent="input">
+                            <dx-validator>
+                                <dxi-validation-rule type="required" message="Email is required"></dxi-validation-rule>
+                                <dxi-validation-rule type="email" message="Email is invalid"></dxi-validation-rule>
+                            </dx-validator>
+                        </dx-text-box>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label for="inputUser" class="dx-field-label mb-0 pb-0 text-left">Username</label>
+                        <dx-text-box #inputUser type="text" id="inputUser" name="user" formControlName="username"
+                            valueChangeEvent="input">
+                            <dx-validator>
+                                <dxi-validation-rule type="required" message="Username is required">
+                                </dxi-validation-rule>
+                            </dx-validator>
+                        </dx-text-box>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label for="inputPassword" class="dx-field-label mb-0 pb-0 text-left">Password</label>
+                        <dx-text-box mode="password" id="inputPassword" name="password" formControlName="password"
+                            valueChangeEvent="input">
+
+                            <dx-validator>
+                                <dxi-validation-rule type="required" message="Password is required">
+                                </dxi-validation-rule>
+                                <!-- <dxi-validation-rule type="pattern" [pattern]="passwordPattern"
+                                    message="Invalid password"></dxi-validation-rule> -->
+                            </dx-validator>
+                        </dx-text-box>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label for="inputPassword" class="dx-field-label mb-0 pb-0 text-left"
+                            style="overflow: visible;">Confirm password</label>
+                        <dx-text-box mode="password" id="inputPassword" name="password"
+                            formControlName="confirmPassword" valueChangeEvent="input">
+
+                            <dx-validator>
+                                <dxi-validation-rule type="compare" [comparisonTarget]="passwordComparison"
+                                    message="Password and Confirm Password do not match"></dxi-validation-rule>
+                            </dx-validator>
+
+                        </dx-text-box>
+                    </div>
+                    <div class="col-12 pt-2 mt-3">
+                        <dx-button [useSubmitBehavior]="true" class=" d-block dx-button-success" text="Register">
+                        </dx-button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

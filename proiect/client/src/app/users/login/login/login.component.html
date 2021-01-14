@@ -1,0 +1,42 @@
+<dx-load-panel [visible]="loading$ | async" [showIndicator]="true" [showPane]="true" [shading]="true"
+    [closeOnOutsideClick]="false"></dx-load-panel>
+
+<div class="d-flex justify-content-center ">
+    <div style="width:300px">
+        <h2 class="text-center">Login</h2>
+        <div class="dx-card wide-card">
+            <form class="p-4" [formGroup]="form" (submit)="onLogin()">
+                <div class="form-row align-items-end row">
+                    <div class="col-12">
+                        <label for="inputUser" class="dx-field-label mb-0 pb-0 text-left">Username</label>
+                        <dx-text-box #inputUser type="text" id="inputUser" name="user" formControlName="userName"
+                            valueChangeEvent="input">
+                            <dx-validator validationGroup="loginComponentValidationGroup">
+                                <dxi-validation-rule type="required" message=" "></dxi-validation-rule>
+                            </dx-validator>
+                        </dx-text-box>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputPassword" class="dx-field-label mb-0 pb-0 text-left">Password</label>
+                        <dx-text-box mode="password" id="inputPassword" name="password" formControlName="password"
+                            valueChangeEvent="input">
+                            <dx-validator validationGroup="loginComponentValidationGroup">
+                                <dxi-validation-rule type="required" message="Password is required!">
+                                </dxi-validation-rule>
+                            </dx-validator>
+                        </dx-text-box>
+                    </div>
+                    <div class="col-12 pt-2">
+                        <dx-button [useSubmitBehavior]="true" class=" d-block dx-button-default" text="Login"
+                            validationGroup="loginComponentValidationGroup">
+                        </dx-button>
+                        <!-- <dx-button class=" d-block dx-button-primary mt-2" text="Login with facebook"
+                            (click)="onFacebookLogin()">
+                        </dx-button> -->
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

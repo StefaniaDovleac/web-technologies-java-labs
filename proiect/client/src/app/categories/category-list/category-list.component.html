@@ -1,0 +1,10 @@
+<div class="d-flex align-items-center justify-content-between">
+    <h2>Categories</h2>
+    <div class=" content-block ml-a">
+        <dx-button class="ml-2" text="Adauga" type="default" (click)="onAdd()"></dx-button>
+    </div>
+</div>
+
+<dx-data-grid [dataSource]="categories$ | async" (onRowClick)="onRowClick($event)">
+
+</dx-data-grid>

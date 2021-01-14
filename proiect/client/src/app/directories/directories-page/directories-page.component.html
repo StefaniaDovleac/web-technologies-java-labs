@@ -1,0 +1,19 @@
+<dx-file-manager id="fileManager" height="900" [fileSystemProvider]="customFileProvider">
+
+    <!-- <dxo-item-view [showParentFolder]="false">
+        <dxo-details>
+            <dxi-column dataField="name"></dxi-column>
+            <dxi-column dataField="dateModified"></dxi-column>
+            <dxi-column dataField="size"></dxi-column>
+
+            <dxi-column dataField="createdBy" caption="Created By" category>
+
+            </dxi-column>
+
+        </dxo-details>
+    </dxo-item-view> -->
+
+    <dxo-permissions create="true" delete="true" rename="true" upload="true" download="true">
+    </dxo-permissions>
+
+</dx-file-manager>
