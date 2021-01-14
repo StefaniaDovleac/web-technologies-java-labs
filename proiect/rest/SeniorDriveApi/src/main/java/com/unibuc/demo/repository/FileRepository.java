@@ -68,7 +68,7 @@ public class FileRepository {
                 .findFirst();
     }
 
-    public File save(File file){
+    public File save(File file) {
         String sql = "INSERT INTO files VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         KeyHolder holder = new GeneratedKeyHolder();
         jdbcTemplate.update(connection -> {
@@ -92,16 +92,17 @@ public class FileRepository {
         return file;
     }
 
-    public int delete(Integer id){
+    public boolean delete(Integer id) {
         String sql = "DELETE FROM files WHERE id = ?";
-        return jdbcTemplate.update(sql, id);
+        int affectedRows = jdbcTemplate.update(sql, id);
+        return affectedRows == 1;
     }
 
-    public File updateFile(File file){
+    public File updateFile(File file) {
         String sql = "UPDATE files SET title = ?, size = ?, parentId = ?, lastModifiedBy = ?, lastModifiedOn = ?" +
                 ", isPublic = ?, fileUri = ? WHERE id = ?";
-        int affectedRows = jdbcTemplate.update(sql,file.getTitle(), file.getSize(),file.getParentId(),file.getLastModifiedBy(),file.getLastModifiedOn(),
-                file.getIsPublic(),file.getFileUri(),file.getId());
+        int affectedRows = jdbcTemplate.update(sql, file.getTitle(), file.getSize(), file.getParentId(), file.getLastModifiedBy(), file.getLastModifiedOn(),
+                file.getIsPublic(), file.getFileUri(), file.getId());
         if (affectedRows == 1) {
             return file;
         }

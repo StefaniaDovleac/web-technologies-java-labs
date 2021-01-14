@@ -58,11 +58,11 @@ public class FileService {
         return savedFile;
     }
 
-    @Transactional
-    public void delete(Integer id) {
-        String fileName = fileRepository.getById(id).get().getTitle();
-        storageService.deleteBlob(fileName);
-        fileRepository.delete(id);
+//    @Transactional
+    public boolean delete(Integer id) {
+//        String fileName = fileRepository.getById(id).get().getTitle();
+//        storageService.deleteBlob(fileName);
+       return  fileRepository.delete(id);
     }
 
     @Transactional

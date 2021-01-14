@@ -9,7 +9,7 @@ declare let Camera: any;
 
 @Injectable({ providedIn: 'root' })
 export class UsersService {
-    loginResult: LoginResponseDTO;
+    loginResult: LoginResponseDTO = new LoginResponseDTO();
     token: string;
 
     constructor(private store: UsersStore,
@@ -43,7 +43,8 @@ export class UsersService {
             const result = await this.userHttpService.login(loginData).toPromise();
             if (result) {
                 this.token = result.token;
-                // this.loginResult.isAdmin = true;
+                result.isAdmin = true;
+                console.log("result", this.loginResult)
                 this.store.update({
                     loginResponse: result,
                 });

@@ -22,7 +22,7 @@ public class UserRepository {
     }
 
     public User save(User user) {
-        String sql = "INSERT INTO users (id, userName, email, hashedPassword, isAdmin) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO users (id, userName, email, hashedPassword, isAdmin) VALUES(?, ?, ?, ?, ?)";
         KeyHolder holder = new GeneratedKeyHolder();
         jdbcTemplate.update(connection -> {
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -38,7 +38,7 @@ public class UserRepository {
         return user;
     }
 
-    public Optional<User> findBy(Long id) {
+    public Optional<User> findBy(Integer id) {
         String query = "SELECT * FROM users WHERE id = ?";
         RowMapper<User> mapper = ((resultSet, i) -> new User(
                 resultSet.getInt("id"),
@@ -50,7 +50,19 @@ public class UserRepository {
         return jdbcTemplate.query(query, mapper, id).stream().findAny();
     }
 
-    public Optional<User> findByEmail(String email){
+    public Optional<User> findByUserName(String userName){
+        String query = "SELECT * FROM users WHERE userName = ?";
+        RowMapper<User> mapper = ((resultSet, i) -> new User(
+                resultSet.getInt("id"),
+                resultSet.getString("userName"),
+                resultSet.getString("email"),
+                resultSet.getBoolean("isAdmin"),
+                resultSet.getString("email")
+        ));
+        return jdbcTemplate.query(query, mapper, userName).stream().findAny();
+    }
+
+    public Optional<User> findByEmail(String email) {
         String query = "SELECT * FROM users WHERE email = ?";
         RowMapper<User> mapper = ((resultSet, i) -> new User(
                 resultSet.getInt("id"),
@@ -62,8 +74,9 @@ public class UserRepository {
         return jdbcTemplate.query(query, mapper, email).stream().findAny();
     }
 
-    public int delete(Integer id){
+    public boolean delete(Integer id){
         String sql = "DELETE FROM users WHERE id = ?";
-        return jdbcTemplate.update(sql, id);
+        int rowAffected =  jdbcTemplate.update(sql, id);
+        return rowAffected == 1;
     }
 }

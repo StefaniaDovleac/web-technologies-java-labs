@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc35e8cf-adf0-4762-a97d-e471a01d3898" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../SeniorDriveClient/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../SeniorDriveClient/src/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/domain/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/domain/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/dto/FileDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/dto/FileDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/DirectoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/DirectoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/repository/FileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeniorDriveApi/src/main/java/com/unibuc/demo/service/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="dc35e8cf-adf0-4762-a97d-e471a01d3898" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -39,6 +30,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,6 +45,7 @@
       <workItem from="1609155663555" duration="1175000" />
       <workItem from="1609176304409" duration="52000" />
       <workItem from="1609869859097" duration="12000" />
+      <workItem from="1610636025538" duration="144000" />
     </task>
     <servers />
   </component>
@@ -59,10 +53,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1608023636757">
+    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1610636175786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1608023636757" />
+    <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1610636175786" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1610636169795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.98.1360.728@0.0.1920.1040" timestamp="1610636169795" />
     <state x="342" y="180" key="new project wizard" timestamp="1608023638393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -29,30 +29,21 @@ public class UserController {
     }
 
     @GetMapping(path = "{id}")
-    public ResponseEntity<UserDTO> getBy(@PathVariable Long id) {
+    public ResponseEntity<UserDTO> getBy(@PathVariable Integer id) {
         UserDTO userDTO = mapper.mapToDTO(service.get(id));
         System.out.println(userDTO);
         return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 
-    @PostMapping(path = "/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> create(@Valid @RequestBody UserDTO userDTO) {
-        service.create(mapper.mapToEntity(userDTO));
-        return new ResponseEntity<>(HttpStatus.CREATED);
-    }
-
     @PostMapping(path = "/register", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<UserDTO> registerNewAccount(@Valid @RequestBody UserDTO userDTO) {
-//        service.create(mapper.mapToEntity(userDTO));
-//        return new ResponseEntity<>(HttpStatus.CREATED);
+        UserDTO  dto = mapper.mapToDTO(service.create(mapper.mapToEntity(userDTO)));
+        return new ResponseEntity<>( dto, HttpStatus.CREATED);
+    }
 
-        try {
-            User user = service.create(mapper.mapToEntity(userDTO));
-        } catch (EmailExistsException ex) {
-
-
-        }
-//        UserDTO result = mapper.mapToDTO(user);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+    @DeleteMapping(path = "/delete/{id}")
+    public ResponseEntity<Boolean> delete(@PathVariable Integer id) {
+        service.delete(id);
+        return new ResponseEntity<>(true,  HttpStatus.OK);
     }
 }

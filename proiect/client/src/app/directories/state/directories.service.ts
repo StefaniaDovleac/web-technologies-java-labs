@@ -90,9 +90,10 @@ export class DirectoriesService {
             let filePath = "";
             if (file?.parentId) {
                 const parent = this.directories.find(dir => dir.id === file.parentId)
-                const parentTitle = parent.title;
+                const parentTitle = parent?.title;
                 filePath = this.findPath(parent).slice(0, -1).split("/").reverse().join("/") + "/" + parentTitle;
             }
+            console.log(filePath);
             return {
                 path: filePath,
                 isDirectory: false,
@@ -120,7 +121,7 @@ export class DirectoriesService {
     }
 
     private findPath(directory: DirectoryDTO) {
-        if (!directory.parentId) {
+        if (!directory?.parentId) {
             return "";
         }
         const parent = this.directories.find(d => d.id === directory.parentId);
@@ -164,21 +165,31 @@ export class DirectoriesService {
             console.log(id)
             if (item.isDirectory) {
                 const directoryToUpdate = this.directories.find(d => d.id === id);
-                directoryToUpdate.name = name;
-                directoryToUpdate.categoryId = 1;
-                directoryToUpdate.lastModifiedOn = new Date();
 
-                console.log("dir", directoryToUpdate)
-                const directoryUpdated = await this.directoriesHttpService.update(directoryToUpdate).toPromise();
+                const newDirectory = {
+                    ...directoryToUpdate,
+                    title: name,
+                    categoryId: 1,
+                    parentId: directoryToUpdate.parentId == 0 ? null : directoryToUpdate.parentId,
+                    lastModifiedOn: new Date(),
+                } as DirectoryDTO
+
+                console.log("dir", newDirectory)
+                const directoryUpdated = await this.directoriesHttpService.update(newDirectory).toPromise();
                 this.store.update({
-                    directories: arrayUpdate(this.store.getValue().directories, (d) => d.id === id, directoryUpdated)
+                    directories: arrayUpdate(this.store.getValue().directories, (d) => d.id === id, newDirectory)
                 })
             } else {
                 const fileToUpdate = this.files.find(d => d.id === id);
-                fileToUpdate.lastModifiedOn = new Date();
-                const fileUpdated = await this.filesHttpService.update(fileToUpdate).toPromise();
+                const newFile = {
+                    ...fileToUpdate,
+                    title: name,
+                    parentId: fileToUpdate.parentId == 0 ? null : fileToUpdate.parentId,
+                    lastModifiedOn: new Date()
+                }
+                const fileUpdated = await this.filesHttpService.update(newFile).toPromise();
                 this.store.update({
-                    files: arrayUpdate(this.store.getValue().files, (d) => d.id === id, fileUpdated)
+                    files: arrayUpdate(this.store.getValue().files, (d) => d.id === id, newFile)
                 })
             }
             this.updateFileItems();
@@ -188,8 +199,6 @@ export class DirectoriesService {
         }
 
     }
-
-
 
     async deleteItem(item: FileSystemItem) {
         try {
@@ -247,8 +256,9 @@ export class DirectoriesService {
             const result = await this.filesHttpService.create(newFile).toPromise();
             if (result) {
                 const fileSystemItems = this.mapFiles([result]);
+                console.log(fileSystemItems);
                 this.store.update({
-                    fileSystemItems: arrayAdd(this.store.getValue().fileSystemItems, fileSystemItems)
+                    fileSystemItems: arrayAdd(this.store.getValue().fileSystemItems, fileSystemItems[0])
                 })
             }
         } finally {

@@ -1,9 +1,9 @@
 package com.unibuc.demo.dto;
 
-import com.unibuc.demo.validators.PasswordMatches;
 import lombok.*;
 
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Getter
@@ -14,13 +14,12 @@ import javax.validation.constraints.NotNull;
 //@PasswordMatches
 public class UserDTO {
     private Integer id;
-    @NotNull
+    @NotBlank
     private String userName;
-    @NotNull
+    @NotBlank
     @Email
     private String email;
-    @NotNull
+    private Boolean isAdmin;
+    @NotBlank
     private String password;
-    private String matchingPassword;
-    private Boolean isAdmin; 
 }
